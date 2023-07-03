@@ -1,7 +1,10 @@
 
 :root{
-    background-color: rgb(234, 234, 234);
+    --background-color: rgb(234, 234, 234);
+    --bg-button-color: hsl(32, 90%, 53%);
 }
+
+
 *{
 	margin:0;
 	padding: 0;
@@ -11,9 +14,10 @@
 }
 body{
     font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
 }
 section{
-    margin: 55px auto;
+    margin: 150px auto;
 }
 h1{
     font-size: 4rem;
@@ -26,6 +30,7 @@ h3{
     font-size: 2.5rem;
     text-align: center;
     margin: 15px;
+    
 }
 h4{
     font-size: 1.25rem;
@@ -117,7 +122,7 @@ display: flex;
     justify-content: space-around;
 }
 .button-cv{
-    background-color: #F38F1A;
+    background-color: var(--bg-button-color);
     color: white;
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
@@ -187,7 +192,7 @@ display: flex;
     pointer-events: none;
 }
 .edu-der>img{
-    width: 100%;
+    width: 90%;
 }
 .educación .line-styling{
     padding-bottom: 60px;
@@ -223,8 +228,7 @@ display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    min-height: 60vh;
-    /* padding: 2.5rem 2rem 2rem 2rem; */
+    /* min-height: 60vh; */
 }
 .skills-conteiner{
     display: flex;
@@ -286,8 +290,8 @@ display: flex;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap:40px;
-    margin-left: 7.52%;
-    margin-right: 7.52%;
+    margin-left: 106px;
+    margin-right:106px;
     padding: 60px 0;
 }
 .proyectos-item{
@@ -367,6 +371,7 @@ footer{
     padding: 20px;
     text-align: center;
     border-radius: 2rem 2rem 0 0;
+    margin-top: 150px;
 }
 h8{ 
     font-size: 1rem;
